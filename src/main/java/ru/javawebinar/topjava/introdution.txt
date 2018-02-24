@@ -1,5 +1,0 @@
-just testing, if all changes in local rep are pushing to github in correct way.
-
-reason of test:
-    after making a fork from github, I needed to change a localisation of new local repository, so I need to test if pushing
-    is working good.
