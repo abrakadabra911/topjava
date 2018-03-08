@@ -3,6 +3,7 @@ package ru.javawebinar.topjava.model;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.Month;
 
 public class Meal {
     private final LocalDateTime dateTime;
@@ -10,6 +11,13 @@ public class Meal {
     private final String description;
 
     private final int calories;
+
+
+    public Meal(){
+        this.dateTime = null;
+        this.description = "";
+        this.calories = 0;
+    }
 
     public Meal(LocalDateTime dateTime, String description, int calories) {
         this.dateTime = dateTime;
