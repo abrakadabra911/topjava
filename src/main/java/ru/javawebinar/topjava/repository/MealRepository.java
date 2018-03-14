@@ -1,15 +1,18 @@
 package ru.javawebinar.topjava.repository;
 
 import ru.javawebinar.topjava.model.Meal;
+import ru.javawebinar.topjava.to.MealWithExceed;
 
 import java.util.Collection;
+import java.util.List;
 
 public interface MealRepository {
-    Meal save(Meal meal);
 
-    void delete(int id);
+    MealWithExceed save(Meal meal, int userId);
 
-    Meal get(int id);
+    boolean delete(int id, int userId);
 
-    Collection<Meal> getAll();
+    MealWithExceed get(int id, int userId);
+
+    List<MealWithExceed> getAll(int userId);
 }
